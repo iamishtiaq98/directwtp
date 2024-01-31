@@ -1,0 +1,29 @@
+{
+  "name": "ClipTick",
+  "version": "1.0.0",
+  "description": "ClipTick is simple tiktok downloader with nodejs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "axios": "^1.1.3",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-useragent": "latest",
+    "geoip-lite": "^1.4.9",
+    "moment-timezone": "^0.5.39",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^3.0.3",
+    "sitemap": "^7.1.1"
+  },
+  "scripts": {
+    "start": "nodemon node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CodeWithIshtiaq.com",
+  "license": "ISC"
+}

@@ -1,0 +1,26 @@
+<footer class="page-footer welcome header-txt" style="position: fixed; bottom: 0; width: 100%;">
+  <div class="container">
+    <div class="row">
+      <div class="col l9 s12">
+        <h5 class="white-text">About Us</h5>
+        <p class="grey-text text-lighten-4">
+          <%= titleweb %> 
+        </p>
+      </div>
+
+      <div class="col l3 s12">
+        <h5 class="white-text">Informitions</h5>
+        <ul>
+          <li class="grey-text text-lighten-3">Your IP: <%= ipAddr %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <%- new Date().getFullYear() %> © <%= titleweb %>, Created by <a class="grey-text text-lighten-3"
+            href="https://codewithishtiaq.vercel.app/" target="_blank">CodeWithIshtiaq.com</a>
+    </div>
+  </div>
+</footer>

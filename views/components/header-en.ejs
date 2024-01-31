@@ -1,0 +1,242 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, shrink-to-fit=no" />
+
+<title>
+  <%= locals.titlecustom || titleweb %>
+</title>
+<meta name="description" content="titleweb" />
+
+
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://<%= req.hostname %>/en" />
+<meta property="og:title" content="<%= locals.titlecustom || titleweb %>" />
+<meta property="og:description" content="<%= locals.description || titleweb %>" />
+<meta property="og:image" content="/assets/img/demos/home.png" />
+
+<meta name="msapplication-TileColor" content="#015766" />
+<meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
+<meta name="theme-color" content="#015766" />
+<meta name="keywords" content="<%= locals.keywords  %>" />
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  as="style" />
+<link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" as="style" />
+<link rel="preload" href="/assets/font/custom.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/font/PoorStory.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/assets/img/cover.png" as="image" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png" />
+<link rel="manifest" href="/assets/js/manifest.json" />
+<link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5" />
+<link rel="shortcut icon" href="/assets/img/favicon.ico" />
+<link rel="canonical" href="<%= req.protocol %>://<%= req.hostname %>" />
+<link rel="alternate" hreflang="x-default" href="/" />
+<link rel="alternate" hreflang="en" href="/en" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
+
+<link rel="stylesheet" href="/assets/build/css/intlTelInput.min.css" />
+
+
+<style>
+   h3 {
+    color: #fff !important;
+    transition: all 1s ease;
+  }
+
+  h3:hover {
+    color: #f18c17 !important;
+  }
+
+  @media (min-width: 1281px) {
+    h4 {
+      font-size: 1.64rem;
+    }
+
+    .headtwo {
+      margin-top: -1%;
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    h4 {
+      font-size: 1.64rem;
+    }
+
+    .headtwo {
+      margin-top: -1%;
+      font-size: 1.3rem;
+    }
+
+    .headthird {
+      font-size: 1.64rem;
+    }
+  }
+
+  @media only screen and (min-width: 990px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h4 {
+      font-size: 1.64rem;
+    }
+
+    .headtwo {
+      margin-top: -1%;
+      font-size: 1.3rem;
+    }
+
+    .headthird {
+      font-size: 1.64rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    h4 {
+      font-size: 1.64rem;
+    }
+
+    .headtwo {
+      margin-top: -1%;
+      font-size: 1.3rem;
+    }
+
+    .headthird {
+      font-size: 1.64rem;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    h4 {
+      font-size: 1.64rem;
+    }
+
+    .headtwo {
+      margin-top: -1%;
+      font-size: 1.1rem;
+    }
+
+    .headthird {
+      font-size: 1.64rem;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    h5,
+    h3 {
+      font-size: 1.3rem;
+      color: #fff !important;
+    }
+
+    .headone {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .headthird {
+      font-size: 1.3rem;
+    }
+  }
+
+  @font-face {
+    font-family: cusfont;
+    src: url(/assets/font/custom.woff2) format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poor Story', cursive;
+    src: url(/assets/font/PoorStory.ttf) format("ttf");
+    font-display: swap;
+  }
+
+  .img-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .inputw {
+    border-color: #fff;
+  }
+
+  .ScrollStyle {
+    max-height: 450px;
+    overflow-y: scroll;
+  }
+
+  .card {
+    margin-bottom: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .placeholder {
+    color: #d11818;
+    opacity: 1;
+  }
+
+
+
+  .bg {
+    background-color: #7fe5f7 !important;
+  }
+
+  .welcome {
+    background-color: #686868;
+    background-image: url(/assets/img/cover.png);
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  .preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+  }
+
+
+
+  .input-field .prefix.right {
+    right: 0;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+
+
+  @media screen and (max-width: 599px) {
+    .ad-slot {
+      min-height: 50px;
+    }
+  }
+
+
+  .iti {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .iti--allow-dropdown input,
+  .iti--allow-dropdown input[type="tel"],
+  .iti--allow-dropdown input[type="text"],
+  .iti--separate-dial-code input,
+  .iti--separate-dial-code input[type="tel"],
+  .iti--separate-dial-code input[type="text"] {
+    margin-left: 0;
+    padding-left: 60px;
+    width: 90%;
+  }
+</style>
